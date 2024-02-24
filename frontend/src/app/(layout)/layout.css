@@ -1,0 +1,24 @@
+.layout-container {
+  @apply bg-primary-foreground;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  grid-template:
+    [row1-start] "brand navbar user" 70px [row1-end]
+    [row2-start] "sidebar content infobar" auto [row2-end]
+    / 16% auto 25%;
+}
+
+.layout-container .layout {
+  justify-self: stretch;
+  /* border: 1px solid red; */
+}
+
+.layout-container .child-wrap {
+  @apply flex flex-col bg-secondary;
+}
+
+.layout-container .brand {
+  @apply pl-5 bg-background;
+}

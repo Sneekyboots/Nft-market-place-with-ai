@@ -1,0 +1,19 @@
+.user-card {
+  @apply flex items-center px-3 bg-primary/20;
+}
+
+.user-card .avatar {
+  @apply flex items-center justify-center h-[60px] w-[60px] bg-primary rounded-full;
+}
+
+.user-card .user-details {
+  @apply pl-3 text-primary;
+}
+
+.user-card .user-details h3 {
+  @apply font-bold text-lg;
+}
+
+.user-card .user-details p {
+  @apply font-light;
+}

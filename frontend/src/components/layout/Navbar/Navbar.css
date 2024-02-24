@@ -1,0 +1,15 @@
+.navbar {
+  @apply flex;
+}
+
+.navbar .searchbar {
+  @apply flex-auto flex justify-center items-center;
+}
+
+.navbar .searchbar input {
+  @apply w-[80%] h-[40px] text-input;
+}
+
+.navbar .action {
+  @apply flex-1 flex justify-center items-center text-primary gap-5;
+}

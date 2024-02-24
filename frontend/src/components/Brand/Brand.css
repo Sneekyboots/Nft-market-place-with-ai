@@ -1,0 +1,29 @@
+.brand {
+  @apply flex gap-3;
+}
+
+.brand > div {
+  @apply flex;
+}
+
+/* .brand .brand-image {
+  @apply px-1;
+} */
+
+.brand .brand-image img {
+  @apply object-contain;
+}
+
+.brand .brand-name {
+  @apply flex-col justify-center;
+}
+
+.brand .brand-name h1 {
+  @apply font-semibold text-xl text-primary leading-6;
+  letter-spacing: 3px;
+}
+
+.brand .brand-name p {
+  @apply text-lg text-secondary-foreground leading-6;
+  letter-spacing: 7px;
+}

@@ -1,0 +1,55 @@
+.landing-navbar {
+  @apply sticky top-0 flex justify-between items-center bg-slate-600 bg-opacity-20 px-5 border-border rounded-b-xl shadow-lg p-2 backdrop-blur-md z-20;
+}
+
+/* .landing .navbar {
+  @apply w-full flex items-center justify-between;
+  padding: 20px 0;
+}
+
+.landing .navbar .toggler {
+  @apply text-[2rem] bg-transparent cursor-pointer border-none hidden;
+  color: #c5c3c3;
+}
+
+.landing .navbar .nav-btn {
+  @apply text-[12px] bg-transparent cursor-pointer border-none w-[90px] h-[40px];
+  color: #ccc;
+}
+
+.landing .navbar .nav-btn.selected {
+  @apply rounded-[8px];
+  border: 1px solid #ccc;
+}
+
+.navbar .logo {
+  background: linear-gradient(95deg, #7e22ce 3.2%, #3b82f6 99.5%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.navbar .item {
+  font-size: 13px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.navbar .item.selected {
+  background: linear-gradient(95deg, #7e22ce 3.2%, #3b82f6 99.5%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid #7e22ce;
+}
+
+.navbar .item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.navbar .nav-buttons.active {
+  transition: all 0.3s ease;
+  opacity: 1;
+} */

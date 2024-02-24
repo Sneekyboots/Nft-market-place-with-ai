@@ -1,0 +1,66 @@
+.features {
+  @apply flex flex-col my-20;
+}
+
+.features .header {
+  align-self: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 72px;
+}
+
+.features .info-text {
+  align-self: center;
+  color: #ccc;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+
+.features .items-box {
+  padding: 60px 80px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 50px;
+  justify-content: space-around;
+}
+
+.features .items-box:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  top: 80px;
+  background: linear-gradient(95deg, #7e22ce 3.2%, #3b82f6 99.5%);
+  filter: blur(140px);
+}
+
+.features .items-box .item-container p {
+  width: 100px;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+.features .items-box .item-container .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2.6rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(90px);
+}
+
+.features .items-box .item-container .item .bx {
+  font-size: 38px;
+  color: #eee;
+}

@@ -1,0 +1,17 @@
+.sidebar {
+  @apply px-5 text-primary overflow-y-auto relative;
+  height: calc(100vh - 70px);
+}
+
+.sidebar .section h2 {
+  @apply font-light text-lg mb-2;
+  letter-spacing: 5px;
+}
+
+.sidebar .section li {
+  @apply flex my-2;
+}
+
+.sidebar .section li h3 {
+  @apply py-1;
+}
