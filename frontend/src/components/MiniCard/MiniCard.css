@@ -1,0 +1,15 @@
+.mini-card {
+  @apply flex justify-between items-center my-3;
+}
+
+.mini-card .card-details {
+  @apply flex flex-col justify-center  px-3;
+}
+
+.type-0 .card-avatar {
+  @apply h-14 w-14 bg-secondary rounded-full overflow-hidden;
+}
+
+.type-1 .card-avatar {
+  @apply h-16 w-16 bg-secondary rounded-2xl overflow-hidden;
+}

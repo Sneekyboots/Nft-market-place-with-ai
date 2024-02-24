@@ -1,0 +1,98 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = "mongodb+srv://sriranjiniks:A36paFIIn0EV56xA@cluster0.o0ew4jd.mongodb.net/"
+}
+
+// user details
+model User {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  email     String    @unique
+  username  String?   @unique
+  name      String?
+  password  String?
+  image     String?
+  profileId String?
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  // NFT       NFT[]
+}
+
+// user profile
+model Profile {
+  id           String    @id @default(auto()) @map("_id") @db.ObjectId
+  country      String?
+  contact      String?
+  spaceId      String?   @unique
+  collectionId String?   @unique
+  website      String?
+  post         String[]
+  createdAt    DateTime? @default(now())
+  updatedAt    DateTime? @updatedAt
+}
+
+// user post
+model Post {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  publisherId String // profile id
+  title       String
+  description String?
+  likes       Int?
+  comments    Comment[]
+  src         String
+  createdAt   DateTime? @default(now())
+  updatedAt   DateTime? @updatedAt
+}
+
+// user comment
+model Comment {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  Post      Post?     @relation(fields: [postId], references: [id])
+  postId    String?   @db.ObjectId
+  likes     Int?
+  comment   String
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+}
+
+// user collection contains items
+model Collection {
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  title    String
+  category String[]
+  items    String[]
+}
+
+// user space is a 3D space where use can showcase there NFT
+model Space {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  title String
+}
+
+// Create a NFT model satisfying ERC 1155 and link with collection and space ID
+// NFT model satisfying ERC-1155 standard
+// model NFT {
+//   id            String    @id @default(auto()) @map("_id") @db.ObjectId
+//   tokenId       Int       @unique
+//   collectionId  String    @db.ObjectId
+//   spaceId       String    @db.ObjectId
+//   title         String
+//   description   String?
+//   owner         User      @relation(fields: [ownerId], references: [id])
+//   ownerId       String    @db.ObjectId
+//   totalSupply   Int
+//   currentSupply Int
+//   createdAt     DateTime? @default(now())
+//   updatedAt     DateTime? @updatedAt
+//   // Add other fields as needed for ERC-1155 standard
+
+//   // Define relationships
+//   // Collection Collection @relation(fields: [collectionId], references: [id])
+//   // Space      Space      @relation(fields: [spaceId], references: [id])
+// }

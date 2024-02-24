@@ -2,8 +2,6 @@ var express = require('express');
 var app = express();
 const sdk = require('api')('@verbwire/v1.0#1pdgiyl8x6o4im');
 
-const API_KEY = 'url';
-const nftSlug =  'azuki'; //'boredapeyachtclub';
 
 app.get('/', function(req, res){
 

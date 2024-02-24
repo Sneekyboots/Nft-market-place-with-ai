@@ -1,0 +1,41 @@
+.landing .footer {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing .copyright {
+  padding-bottom: 25px;
+  border-top: 1px solid #ccc;
+}
+
+.landing .footer .footer-header {
+  max-width: 50%;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.landing .footer .footer-links {
+  display: flex;
+}
+
+.landing .footer .footer-links .link {
+  margin-left: 70px;
+}
+
+.landing .footer .footer-links .link h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.landing .footer .footer-links .link p {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #ccc;
+}

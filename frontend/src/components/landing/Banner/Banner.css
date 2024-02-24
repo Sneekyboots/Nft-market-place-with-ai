@@ -1,0 +1,114 @@
+.banner {
+  @apply flex items-center justify-between;
+}
+
+.banner .info-box {
+  @apply flex flex-col gap-5 my-20;
+  max-width: 50%;
+  animation: toRight 0.8s;
+}
+
+.banner .header {
+  @apply text-4xl font-semibold leading-tight mt-5;
+}
+
+.banner .header span {
+  @apply inline-block;
+}
+
+.banner .sub-header {
+  @apply text-3xl font-semibold leading-tight;
+}
+
+.banner .info-text {
+  @apply text-base leading-tight;
+  letter-spacing: 0.5px;
+}
+
+.banner .info-buttons {
+  @apply flex gap-5 my-3;
+}
+
+.banner .info-btn {
+  @apply px-10 py-3 cursor-pointer rounded-2xl font-medium text-sm;
+}
+
+.banner .info-btn.selected {
+  @apply border-none;
+  background: linear-gradient(95deg, #7e22ce 3.2%, #3b82f6 99.5%);
+}
+
+.banner .nft-box {
+  @apply flex flex-auto justify-end items-center h-full;
+  animation: toLeft 0.8s;
+}
+
+.banner .nft-box .nft-card {
+  @apply flex flex-col gap-5 p-5 rounded-xl border border-border bg-primary-foreground;
+}
+
+.banner .nft-card .card-image {
+  @apply overflow-hidden rounded-xl;
+}
+
+.banner .nft-card .card-image img {
+  @apply object-contain;
+}
+
+.banner .nft-box .card-info {
+  @apply flex items-center font-semibold text-sm;
+}
+
+@keyframes toRight {
+  from {
+    transform: translateX(-700px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes toLeft {
+  from {
+    transform: translateX(550px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+/* .banner .nft-box .info-img {
+  object-fit: cover;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.banner .nft-box .likes .icon-box {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.banner .nft-box .likes .icon-box .bx {
+  font-size: 30px;
+  margin-right: 8px;
+
+} */
+
+/* .banner .nft-box {
+  padding: 16px;
+  border: 1px solid #000;
+ 
+  border-radius: 2rem;
+  animation: toLeft 0.8s;
+} */
+
+/* .banner .nft-pic {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 1.6rem;
+} */
