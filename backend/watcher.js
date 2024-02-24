@@ -2,8 +2,6 @@ var express = require('express');
 var app = express();
 const sdk = require('api')('@verbwire/v1.0#1pdgiyl8x6o4im');
 
-const API_KEY = 'sk_live_852bb742-9da4-4078-b95c-ddff7dfa3e22';
-const nftSlug =  'azuki';
 
 app.get('/', function(req, res){
 
