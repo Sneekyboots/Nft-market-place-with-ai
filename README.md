@@ -1,2 +1,2 @@
-# Nft-market-place-with-ai
+# Nft-market-place-
 Du hacks submission
