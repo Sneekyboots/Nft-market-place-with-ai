@@ -1,5 +1,5 @@
 
-** ## AI Marketplace Frontend**
+## AI Marketplace Frontend 
 
 This project is the frontend component of an AI marketplace, allowing users to discover, explore, and interact with a wide range of AI services. It's built using modern web technologies for a seamless user experience.
 
